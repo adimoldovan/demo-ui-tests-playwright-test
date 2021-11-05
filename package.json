@@ -1,0 +1,26 @@
+{
+  "name": "demo-ui-tests-playwright-test",
+  "version": "1.0.0",
+  "description": "UI automation project to demonstrate Playwright with Playwright Test",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "clean-install": "npm clean && npm install",
+    "delete:reports": "rm -rf out/* || true",
+    "pretest": "npm run delete:reports",
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adimoldovan/demo-ui-tests-playwright.git"
+  },
+  "keywords": [],
+  "author": "Adrian Moldovan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adimoldovan/demo-ui-tests-playwright/issues"
+  },
+  "homepage": "https://github.com/adimoldovan/demo-ui-tests-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.16.3"
+  }
+}
